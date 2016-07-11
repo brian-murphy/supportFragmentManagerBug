@@ -1,0 +1,22 @@
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ThreadDetailsFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/threadNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.DeviceDefault.WindowTitle"
+        android:text="@string/select_a_thread"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/threadDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem_ipsum"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

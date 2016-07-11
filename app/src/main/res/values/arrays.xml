@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="thread_names">
+        <item>Devices</item>
+        <item>Info Internetworks</item>
+        <item>Intelligence</item>
+        <item>Media</item>
+        <item>Modeling &amp; Simulation</item>
+        <item>People</item>
+        <item>Systems &amp; Architecture</item>
+        <item>Theory</item>
+    </string-array>
+
+    <string-array name="thread_descriptions">
+        <item>The Devices thread is concerned with embedded computational artifacts that interact with people or the physical world. In this thread one learns how to create and evaluate devices that operate under physical constraints such as size, power and bandwidth. Examples include cell phones, robots, jet engines, and intelligent appliances.
+            \n\n
+            The student who pursues Devices can combine it with Systems and Architecture to build devices that are small, power- and cpu-limited, with Intelligence to build automonous robots, with People to study human-robot interaction, or a number of other threads.</item>
+        <item>The Information Internetworks thread is where computing meets data enterprise. This thread deals with implications in the context of personal and organizational information management. Information Internetworks prepares students for all levels of information management by helping them to capture, represent, organize, transform, communicate, and present data so that it becomes information, using geographically distributed multi-national organizations and information needs as context.
+            \n\n
+            The student who pursues Information Internetworks can combine it with Systems and Architecture to develop information rich distributed systems, with Devices to ensure data synchronization in ad-hoc networks of small devices, with Media to build multiplayer online games, with Modeling to study text retrieval and classification, or with People to pursue research in data visualization.</item>
+        <item>The Intelligence thread is concerned with top-to-bottom computational models of intelligence. To this end, we emphasize designing and implementing artifacts that exhibit various levels of intelligence as well as understanding and modeling natural cognitive agents such as humans, ants, or bees. Students acquire the technical knowledge and skills necessary for expressing, specifying, understanding, creating, and exploiting computational models that represent cognitive processes. The Intelligence thread prepares students for fields as diverse as artificial intelligence, machine learning, perception, cognitive science, and countless fields in which these areas of computational intelligence are applied.
+            \n\n
+            The student who pursues Intelligence can combine it with Devices to become a roboticist, with People to build adaptive interfaces, or with Media to build smart and adaptive entertainment - to name a few of the far-reaching possibilities. </item>
+        <item>The Media thread prepares students by helping them to understand the technical and computational capabilities of systems in order to utilize their abilities to provide creative outlets.
+            \n\n
+            The student who pursues Media can combine it with Intelligence to study real-time animation, Information Internetworks to build high performance database systems, or with People to explore visualization of high-bandwi\'dth data streaming. Media provides a creative pairing for any thread combination. </item>
+        <item>The Modeling &amp; Simulation thread is intended for students interested in developing a deep understanding and appreciation of how natural and human-generated systems such as weather, biological processes, supply chains, or computers, can be represented by mathematical models and computer software. Such models are widely used today to better understand and predict the behavior of such systems.
+            \n\n
+            Because these models are often described and represented by mathematical expressions, and the models themselves often deal with physical phenomena, a background in mathematics and the sciences is required. Combining this background with a knowledge in computer science will yield the basic tools necessary to transform abstract conceptual models to computer programs that execute efficiently on digital machines. The required coursework in Modeling &amp; Simulation includes topics in continuous and discrete mathematics, the sciences, and computing. Elective courses enable students to further develop and apply their knowledge and skills to a specific discipline where Modeling &amp; Simulation plays an important role.
+            \n\n
+            The student who pursues Modeling &amp; Simulation can combine it with Intelligence to become a data miner, or with Media to build visualizations of large amounts of scientific data, or People to build work flow systems for scientists who aren\'t computing experts to use. The possibilities are endless.</item>
+        <item>The People thread is where computing meets users. This thread prepares students by helping them to understand the theoretical and computational foundations for designing, building, and evaluating systems that treat the human as a central component.
+            \n\n
+            The student who pursues the People thread can combine it with Devices to study human-robot interaction, Information Internetworks to pursue research in data visualization, Intelligence for learning sciences and technology, Systems &amp; Architecture to explore ubiquitous computing, or various other combinations.</item>
+        <item>The Systems &amp; Architecture thread is where many of the practical skills of computing are learned. This thread teaches you about the organization of computer systems, how they are built using different hardware and software layers and how they are programmed.
+            \n\n
+            The Systems &amp; Architecture thread deals with a complete vertical slice of system building from processor design, memory organization to virtualization and operating system layers all the way up to the programming interfaces, languages and the tool chains such as compilers, debuggers and profilers. It emphasizes different system properties such as performance, power consumption, reliability, security, and availability. This thread spans a vast spectrum of systems ranging from parallel and distributed systems to emerging multi-core systems, as well as domain specific systems (such as gaming consoles, healthcare information systems, real-time embedded controllers used in avionics, and so on).
+            \n\n
+            Students can combine Systems &amp; Architecture with Theory to form the basis of a traditional CS degree, with Information Internetworks to broaden their system knowledge of web technologies, with Media to devise media-centric platforms, with Devices to build embedded platforms, or a number of other practical combinations.</item>
+        <item>The Theory thread is where computing models and addresses scaling. Theory quantifies, in mathematical terms, the efficiency by which problems are solved, as problem instances grow in size.
+            \n\n
+            In the Theory thread, students study abstractions of universal computational models, complexity classes within which many natural problems fall, and abstract methods to design efficient algorithms and analyze algorithmic performance. Early preparation includes introduction to programming, discrete math, proof techniques, algorithms and complexity. The student who pursues the Theory thread will eventually learn to formally quantify and improve performance either within theoretical computer science, or within an applied area of computer science, or in another science with a clear computational component (such as computational biology, physics, economics, mathematics, optimization etc).
+            \n\n
+            A student can combine Theory with Information Internetworks to enhance and quantify the performance of networks or databases or pursue security and cryptography, or with Systems &amp; Architecture to design programming languages or build provably efficient systems and software, or with Modeling &amp; Simulation to solve, with proven rigor, a wide range of real-world large scale problems. A student who pursues Theory can combine it with any other thread and enhance those skills with a deep quantitative understanding of performance of the objects studied in the other thread. In addition, in any application related work environment, from a research or development lab, to a consulting firm or the stock market, ability to design tools, reason about them formally, and quantify performance is a skill that greatly enhances one\'s vita.
+            \n\n
+            A student who pursues the theory thread at Georgia Tech is also an excellent candidate for a Ph.D. in theoretical computer science.</item>
+    </string-array>
+</resources>
