@@ -1,8 +1,11 @@
-package org.gitmad.beginners.sessionsix;
+package org.gitmad.beginners.sessionsix.activity;
 
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import org.gitmad.beginners.sessionsix.R;
+import org.gitmad.beginners.sessionsix.fragment.ThreadDetailsFragment;
 
 public class ThreadDetailsActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package org.gitmad.beginners.sessionsix;
+package org.gitmad.beginners.sessionsix.fragment;
 
 /**
  * Created by brian on 5/20/16.

@@ -1,10 +1,13 @@
-package org.gitmad.beginners.sessionsix;
+package org.gitmad.beginners.sessionsix.activity;
 
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
+
+import org.gitmad.beginners.sessionsix.fragment.OnThreadClickedListener;
+import org.gitmad.beginners.sessionsix.R;
+import org.gitmad.beginners.sessionsix.fragment.ThreadDetailsFragment;
 
 public class MainActivity extends AppCompatActivity implements OnThreadClickedListener {
 
@@ -67,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements OnThreadClickedLi
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-
         outState.putInt(KEY_CURRENT_THREAD_INDEX, currentThreadIndex);
 
         super.onSaveInstanceState(outState);
