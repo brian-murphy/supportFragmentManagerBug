@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SessionSix.iml" filepath="$PROJECT_DIR$/SessionSix.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gitmad_fragmentLesson.iml" filepath="$PROJECT_DIR$/gitmad_fragmentLesson.iml" />
     </modules>
   </component>
 </project>

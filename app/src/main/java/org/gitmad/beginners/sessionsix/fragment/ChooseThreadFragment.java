@@ -3,6 +3,7 @@ package org.gitmad.beginners.sessionsix.fragment;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,9 +15,7 @@ import org.gitmad.beginners.sessionsix.R;
 
 public class ChooseThreadFragment extends Fragment {
 
-    //TODO add alternative RecyclerView implementation to demo it.
-
-    private ArrayAdapter<String> threadsArrayAdapter;
+    private TextViewAdapter adapter;
 
     private OnThreadClickedListener threadClickListener;
 
@@ -38,10 +37,9 @@ public class ChooseThreadFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        threadsArrayAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1);
-
         String [] threadNames = getResources().getStringArray(R.array.thread_names);
-        threadsArrayAdapter.addAll(threadNames);
+
+        adapter = new TextViewAdapter(threadNames, threadClickListener);
     }
 
     @Override
@@ -50,9 +48,19 @@ public class ChooseThreadFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_choosethread, container, false);
 
         RecyclerView threadsRecyclerView = (RecyclerView) rootView.findViewById(R.id.threadRecyclerView);
-        threadsRecyclerView.setAdapter();
+        configureRecyclerView(threadsRecyclerView);
 
         return rootView;
+    }
+
+    private void configureRecyclerView(RecyclerView threadsRecyclerView) {
+        threadsRecyclerView.setHasFixedSize(true);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        threadsRecyclerView.setLayoutManager(layoutManager);
+
+        threadsRecyclerView.setAdapter(adapter);
     }
 
     @Override
