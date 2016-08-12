@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity implements OnThreadClickedLi
             useFragmentToDisplayThread(currentThreadIndex);
 
         } else {
-            useNewActivityToDisplayThread(currentThreadIndex);
+            startThreadDetailsActivity(currentThreadIndex);
         }
     }
 
-    private void useNewActivityToDisplayThread(int threadIndex) {
+    private void startThreadDetailsActivity(int threadIndex) {
         Intent intent = new Intent(this, ThreadDetailsActivity.class);
         intent.putExtra(ThreadDetailsActivity.KEY_THREAD_INDEX, threadIndex);
 
