@@ -28,15 +28,15 @@ public class TextViewAdapter extends RecyclerView.Adapter<TextViewAdapter.TextVi
     }
 
     @Override
-    public void onBindViewHolder(TextViewHolder holder, int position) {
+    public void onBindViewHolder(final TextViewHolder holder, int position) {
         holder.textView.setText(listItemStrings[position]);
 
-//        holder.itemView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                itemClickListener.onThreadClicked(position);
-//            }
-//        });
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                itemClickListener.onThreadClicked(holder.getAdapterPosition());
+            }
+        });
     }
 
     @Override
@@ -46,6 +46,7 @@ public class TextViewAdapter extends RecyclerView.Adapter<TextViewAdapter.TextVi
 
     public static class TextViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
+
         public TextViewHolder(View listItemView) {
             super(listItemView);
 

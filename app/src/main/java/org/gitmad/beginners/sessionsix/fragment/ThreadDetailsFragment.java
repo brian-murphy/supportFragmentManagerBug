@@ -48,6 +48,8 @@ public class ThreadDetailsFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
+        setRetainInstance(true);
+
         if (getArguments() != null && getArguments().containsKey(KEY_THREAD_INDEX)) {
             setThread(getArguments().getInt(KEY_THREAD_INDEX));
 
