@@ -45,4 +45,15 @@
             \n\n
             A student who pursues the theory thread at Georgia Tech is also an excellent candidate for a Ph.D. in theoretical computer science.</item>
     </string-array>
+
+    <integer-array name="thread_image_ids">
+        <item>@drawable/threads_devices</item>
+        <item>@drawable/information_internetworks_threads</item>
+        <item>@drawable/intelligence_threads</item>
+        <item>@drawable/media_threads</item>
+        <item>@drawable/modeling_simulation_threads</item>
+        <item>@drawable/people_threads</item>
+        <item>@drawable/systems_architecture_threads</item>
+        <item>@drawable/theory_threads</item>
+    </integer-array>
 </resources>
