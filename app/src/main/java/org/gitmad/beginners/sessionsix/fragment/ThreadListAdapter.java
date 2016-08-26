@@ -1,6 +1,7 @@
 package org.gitmad.beginners.sessionsix.fragment;
 
 import android.content.res.TypedArray;
+import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,10 +16,10 @@ public class ThreadListAdapter extends RecyclerView.Adapter<ThreadListAdapter.Th
 
     public static final int NULL_RESOURCE = 0;
     private String[] listItemStrings;
-    private Drawable[] threadImages;
+    private Bitmap[] threadImages;
     private OnThreadClickedListener itemClickListener;
 
-    public ThreadListAdapter(String[] listItemStrings, Drawable[] threadImages, OnThreadClickedListener itemClickListener) {
+    public ThreadListAdapter(String[] listItemStrings, Bitmap[] threadImages, OnThreadClickedListener itemClickListener) {
         this.listItemStrings = listItemStrings;
         this.threadImages = threadImages;
         this.itemClickListener = itemClickListener;
@@ -42,7 +43,7 @@ public class ThreadListAdapter extends RecyclerView.Adapter<ThreadListAdapter.Th
     @Override
     public void onBindViewHolder(final ThreadViewHolder holder, int position) {
         holder.textView.setText(listItemStrings[position]);
-        holder.imageView.setImageDrawable(threadImages[position]);
+        holder.imageView.setImageBitmap(threadImages[position]);
         holder.threadIndex = position;
     }
 
