@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements OnThreadClickedLi
     private void useFragmentToDisplayThread(int threadIndex) {
         String threadDetailsFragmentTag = getResources().getString(R.string.threaddetailsfragment_tag);
 
-        getSupportFragmentManager().
+        getSupportFragmentManager().executePendingTransactions();
 
         ThreadDetailsFragment detailsFragment = (ThreadDetailsFragment) getSupportFragmentManager()
                 .findFragmentByTag(threadDetailsFragmentTag);
