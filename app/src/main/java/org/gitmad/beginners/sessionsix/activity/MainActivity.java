@@ -26,13 +26,17 @@ public class MainActivity extends AppCompatActivity implements OnThreadClickedLi
 
         if (savedInstanceState != null && savedInstanceState.containsKey(KEY_CURRENT_THREAD_INDEX)) {
 
-            restoreThreadIndex(savedInstanceState);
+            currentThreadIndex = savedInstanceState.getInt(KEY_CURRENT_THREAD_INDEX);
         }
     }
 
-    private void restoreThreadIndex(Bundle savedInstanceState) {
-        currentThreadIndex = savedInstanceState.getInt(KEY_CURRENT_THREAD_INDEX);
-        displayThread();
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (orientationIsLandscape()) {
+            displayThread();
+        }
     }
 
     @Override
@@ -58,8 +62,12 @@ public class MainActivity extends AppCompatActivity implements OnThreadClickedLi
     }
 
     private void useFragmentToDisplayThread(int threadIndex) {
+        String threadDetailsFragmentTag = getResources().getString(R.string.threaddetailsfragment_tag);
+
+        getSupportFragmentManager().
+
         ThreadDetailsFragment detailsFragment = (ThreadDetailsFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.detailsFragment);
+                .findFragmentByTag(threadDetailsFragmentTag);
 
         detailsFragment.setThread(threadIndex);
     }

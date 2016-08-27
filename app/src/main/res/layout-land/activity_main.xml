@@ -26,6 +26,7 @@
 
         <fragment
             android:id="@+id/detailsFragment"
+            android:tag="@string/threaddetailsfragment_tag"
             android:name="org.gitmad.beginners.sessionsix.fragment.ThreadDetailsFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

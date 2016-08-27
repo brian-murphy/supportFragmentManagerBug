@@ -3,4 +3,5 @@
     <string name="action_settings">Settings</string>
     <string name="select_a_thread">Select A Thread</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo leo vel nunc finibus, sed aliquam justo malesuada. Aenean elementum eleifend dolor quis ultricies. Suspendisse nec libero in justo accumsan egestas. Nam congue arcu eros, at vulputate nulla commodo eget. In vitae vehicula lectus. Morbi sagittis turpis sed bibendum tristique. Etiam et felis at neque tincidunt sodales. Donec ac lacus et mauris sagittis sollicitudin quis consequat risus.</string>
+    <string name="threaddetailsfragment_tag">threadDetailsFragment</string>
 </resources>
